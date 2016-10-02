@@ -1,10 +1,10 @@
-.aurelia-grid{
+.aurelia-grid {
 	position: relative;
-	border: 1px solid gainsboro;
-	margin-bottom: 20px;
-	border-radius: 5px;
-	
-	table.grid-header-table{
+	flex-direction: column;
+
+	table.thead {
+		display: flex;
+
 		.grid-column-sortable{
 			cursor: pointer;
 		}
@@ -13,6 +13,8 @@
 		}
 		
 		tr{
+			display: flex;
+			flex-direction: row;
 			th{
 				border-right: 1px solid gainsboro;
     			border-left: 1px solid gainsboro;
@@ -26,6 +28,12 @@
 			}
 		}
 		margin-bottom: 0px;
+
+		tbody{
+			overflow: auto;
+			display: flex;
+			flex-direction: column;
+		}
 	}
 	
 	.grid-content-container{

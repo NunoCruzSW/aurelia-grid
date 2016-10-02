@@ -1,27 +1,35 @@
 .aurelia-grid {
   position: relative;
-  border: 1px solid gainsboro;
-  margin-bottom: 20px;
-  border-radius: 5px;
+  flex-direction: column;
 }
-.aurelia-grid table.grid-header-table {
+.aurelia-grid table.thead {
+  display: flex;
   margin-bottom: 0px;
 }
-.aurelia-grid table.grid-header-table .grid-column-sortable {
+.aurelia-grid table.thead .grid-column-sortable {
   cursor: pointer;
 }
-.aurelia-grid table.grid-header-table th.grid-column-non-sortable {
+.aurelia-grid table.thead th.grid-column-non-sortable {
   cursor: default;
 }
-.aurelia-grid table.grid-header-table tr th {
+.aurelia-grid table.thead tr {
+  display: flex;
+  flex-direction: row;
+}
+.aurelia-grid table.thead tr th {
   border-right: 1px solid gainsboro;
   border-left: 1px solid gainsboro;
 }
-.aurelia-grid table.grid-header-table tr th:first-child {
+.aurelia-grid table.thead tr th:first-child {
   border-left: 0;
 }
-.aurelia-grid table.grid-header-table tr th:last-child {
+.aurelia-grid table.thead tr th:last-child {
   border-right: 0;
+}
+.aurelia-grid table.thead tbody {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
 }
 .aurelia-grid .grid-content-container {
   overflow: auto;

@@ -124,7 +124,7 @@ System.register(['aurelia-framework', './grid-selection', './grid-builder', './g
                 };
                 Object.defineProperty(Grid.prototype, "gridContainer", {
                     get: function () {
-                        this._gridContainer = this._gridContainer || this.element.querySelector(".grid-content-container");
+                        this._gridContainer = this._gridContainer || this.element.querySelector("tbody");
                         return this._gridContainer;
                     },
                     enumerable: true,

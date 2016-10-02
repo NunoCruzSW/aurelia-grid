@@ -12,6 +12,7 @@ System.register([], function(exports_1, context_1) {
                 GridSelection.prototype.select = function (item, event) {
                     // TODO: if multi-selection check event for shift pressed
                     this.grid.selectedItem = item;
+                    return true;
                 };
                 return GridSelection;
             }());

@@ -30,7 +30,7 @@ System.register(['aurelia-framework'], function(exports_1, context_1) {
                 GridBuilder.prototype.buildHeadingTemplate = function () {
                     var _this = this;
                     this.headersViewSlots = [];
-                    var theadTr = this.element.querySelector("table.grid-header-table>thead>tr.grid-headings");
+                    var theadTr = this.element.querySelector("table > thead >tr.grid-headings");
                     // Create the columns headers
                     this.template.columns.forEach(function (c) {
                         // each TH has it's own viewSlot so they have different bindings

@@ -1,23 +1,18 @@
 <template>
 	<require from="./aurelia-grid.css!"></require>
 	<div class="aurelia-grid grid-container">
-		<table class="table table-hover table-striped table-responsive grid-header-table">
+		<table class="table table-hover table-striped table-responsive selectable">
 			<thead>
 				<tr role="button" class="grid-headings">
 				</tr>
 			</thead>
+			<tbody show.bind="!noDataMessage || (noDataMessage && source.count > 0)">
+				<tr role="button" click.delegate="$parent.selection.select($item, $event)">
+				</tr>
+			</tbody>
 		</table>
+		<div show.bind="noDataMessage && source.count === 0" class="alert alert-warning grid-no-data-message">${ noDataMessage }</div>
 
-		<!-- Content table -->
-		<div class="grid-content-container">
-			<table class="table table-hover table-striped table-responsive selectable" show.bind="!noDataMessage || (noDataMessage && source.count > 0)">
-				<tbody>
-					<tr role="button" click.delegate="$parent.selection.select($item, $event)">
-					</tr>
-				</tbody>
-			</table>
-			<div show.bind="noDataMessage && source.count === 0" class="alert alert-warning grid-no-data-message">${ noDataMessage }</div>
-		</div>
 		<div class="grid-overlay" if.bind="source.loading"></div>
 
 		<div if.bind="source.loading" class="progress grid-progress-indicator">

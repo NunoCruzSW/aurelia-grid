@@ -150,7 +150,7 @@ export class Grid{
 	/** Cached Properties */
 	private _gridContainer: any;
 	get gridContainer(): any{
-		this._gridContainer = this._gridContainer || this.element.querySelector(".grid-content-container");
+		this._gridContainer = this._gridContainer || this.element.querySelector("tbody");
 		return this._gridContainer;
 	}
 	private _gridHeaders: any;

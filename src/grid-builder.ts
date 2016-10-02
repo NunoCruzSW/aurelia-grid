@@ -48,7 +48,7 @@ export class GridBuilder {
 	private buildHeadingTemplate(){
 		this.headersViewSlots = [];
 		
-		var theadTr = this.element.querySelector("table.grid-header-table>thead>tr.grid-headings");
+		var theadTr = this.element.querySelector("table > thead >tr.grid-headings");
 
 		// Create the columns headers
 		this.template.columns.forEach(c => {
