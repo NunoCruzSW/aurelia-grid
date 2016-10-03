@@ -27,6 +27,8 @@ export class GridColumn{
 	slot: ViewSlot;
 	view: View;
 	
+	width: string;
+
 	init(){
 		// we can accept the field to be null if the column has no sorting enabled
 		if(this.canSort){

@@ -39,6 +39,11 @@ System.register(['aurelia-framework'], function(exports_1, context_1) {
                         th.setAttribute("class", "grid-column ${$column.headerClass} ${($column.canSort && $grid.columnsCanSort) ? 'grid-column-sortable': 'grid-column-non-sortable'} ${ $column.class !== '' ? $column.class : '' }");
                         th.setAttribute("click.trigger", "$grid.source.sortChanged($column, $event)");
                         th.innerHTML = c.headingTemplate;
+                        if (c.width) {
+                            th.style.flexBasis = c.width;
+                            if (c.width.endsWith('px'))
+                                th.style.flexGrow = '0';
+                        }
                         fragment.appendChild(th);
                         var view = _this.viewCompiler.compile(fragment, _this.viewResources).create(_this.container);
                         var bindingContext = {
@@ -89,6 +94,11 @@ System.register(['aurelia-framework'], function(exports_1, context_1) {
                                 else
                                     td.setAttribute(prop, c[prop]);
                             }
+                        }
+                        if (c.width) {
+                            td.style.flexBasis = c.width;
+                            if (c.width.endsWith('px'))
+                                td.style.flexGrow = '0';
                         }
                         row.appendChild(td);
                     });

@@ -61,6 +61,12 @@ export class GridBuilder {
 
 			th.innerHTML = c.headingTemplate;
 			
+			
+			if(c.width){
+				th.style.flexBasis = c.width;
+				if(c.width.endsWith('px'))
+					th.style.flexGrow = '0';
+			}  
 			fragment.appendChild(th);
 			
 			var view = this.viewCompiler.compile(fragment, this.viewResources).create(this.container);
@@ -123,6 +129,11 @@ export class GridBuilder {
 						td.setAttribute(prop, c[prop]);
 				}
 			}
+			if(c.width){
+				td.style.flexBasis = c.width;
+				if(c.width.endsWith('px'))
+					td.style.flexGrow = '0';
+			}  
 
 			row.appendChild(td);
 		});

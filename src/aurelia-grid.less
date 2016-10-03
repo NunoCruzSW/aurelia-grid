@@ -1,55 +1,68 @@
+grid{
+	display: block;
+}
+
 .aurelia-grid {
 	position: relative;
 	flex-direction: column;
-
-	table.thead {
+	display: flex;
+	height: 100%;
+	table{
+	
+    	display: flex;
+   		flex-direction: column;
+    	overflow:auto;
+		height: 100%;
+	}
+	tbody, thead, tfoot {
 		display: flex;
+		flex-direction: column;
+		flex-grow:0;
+		flex-shrink:0;
+		overflow-y:scroll;
+	}
 
-		.grid-column-sortable{
-			cursor: pointer;
-		}
-		th.grid-column-non-sortable{
-			cursor: default;
-		}
-		
-		tr{
-			display: flex;
-			flex-direction: row;
-			th{
-				border-right: 1px solid gainsboro;
-    			border-left: 1px solid gainsboro;
-				
-				&:first-child{
-					border-left: 0;
-				}
-				&:last-child{
-					border-right: 0;
-				}
-			}
-		}
-		margin-bottom: 0px;
+	thead::-webkit-scrollbar {
+		visibility: hidden; 
+	}
 
-		tbody{
-			overflow: auto;
-			display: flex;
-			flex-direction: column;
-		}
+	tr {
+		display: flex;
+		flex-direction: row;
+		flex-grow: 1;
+		flex-shrink: 0;
+	}
+	td, th {
+		display: block;
+		flex-direction: column;
+		flex-shrink: 1;
+		flex-grow: 1;
+	}
+	th[colspan="2"], td[colspan="2"] {
+		flex-shrink:2;
+		flex-grow:2;
+		flex-basis:100px;
 	}
 	
-	.grid-content-container{
-		overflow: auto;
-		width: 100%;
-		table{
-			tr{
-				&:first-child{
-					td{
-						border-top: 0;
-					}
-				}
-			}
-			margin-bottom: 0px;
-		}
+	tbody.overflowable, thead.overflowable, tfoot.overflowable {
+		flex-grow: 1;
+		flex-shrink: 1;    
 	}
+	
+	// .grid-content-container{
+	// 	overflow: auto;
+	// 	width: 100%;
+	// 	table{
+	// 		tr{
+	// 			&:first-child{
+	// 				td{
+	// 					border-top: 0;
+	// 				}
+	// 			}
+	// 		}
+	// 		margin-bottom: 0px;
+	// 	}
+	// }
 	
 	// Loading overlay
 	.grid-overlay{

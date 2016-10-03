@@ -6,7 +6,7 @@
 				<tr role="button" class="grid-headings">
 				</tr>
 			</thead>
-			<tbody show.bind="!noDataMessage || (noDataMessage && source.count > 0)">
+			<tbody class="overflowable" show.bind="!noDataMessage || (noDataMessage && source.count > 0)">
 				<tr role="button" click.delegate="$parent.selection.select($item, $event)">
 				</tr>
 			</tbody>
