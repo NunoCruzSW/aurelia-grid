@@ -1,0 +1,7 @@
+{
+  "name": "aurelia-grid",
+  "dependencies": {
+    "aurelia-framework": "github:aurelia/framework",
+    "aurelia-pal": "github:aurelia/pal"
+  }
+}
