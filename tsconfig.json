@@ -5,5 +5,11 @@
 		"sourceMap": true,
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true
-	}
+	},
+	"files": [
+		"src"
+	],
+	"exclude": [
+        "jspm_packages"
+    ]
 }

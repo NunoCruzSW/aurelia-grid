@@ -11,6 +11,7 @@
     "aurelia"
   ],
   "author": "Corneliu I. Tusnea <corneliu@acorns.com.au>",
+  "main": "dist/index.js",
   "directories": {
     "lib": "dist"
   },
@@ -34,6 +35,7 @@
     "vinyl-paths": "^2.1.0"
   },
   "jspm": {
+  
     "main": "aurelia-grid.js",
     "directories": {
       "lib": "dist"
