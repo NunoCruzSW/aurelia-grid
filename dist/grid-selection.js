@@ -1,22 +1,15 @@
-System.register([], function(exports_1, context_1) {
+define(["require", "exports"], function (require, exports) {
     "use strict";
-    var __moduleName = context_1 && context_1.id;
-    var GridSelection;
-    return {
-        setters:[],
-        execute: function() {
-            GridSelection = (function () {
-                function GridSelection(grid) {
-                    this.grid = grid;
-                }
-                GridSelection.prototype.select = function (item, event) {
-                    // TODO: if multi-selection check event for shift pressed
-                    this.grid.selectedItem = item;
-                    return true;
-                };
-                return GridSelection;
-            }());
-            exports_1("GridSelection", GridSelection);
+    var GridSelection = (function () {
+        function GridSelection(grid) {
+            this.grid = grid;
         }
-    }
+        GridSelection.prototype.select = function (item, event) {
+            // TODO: if multi-selection check event for shift pressed
+            this.grid.selectedItem = item;
+            return true;
+        };
+        return GridSelection;
+    }());
+    exports.GridSelection = GridSelection;
 });

@@ -37,7 +37,7 @@
       "lib": "dist"
     },
     "dependencies": {
-      "aurelia-framework": "npm:aurelia-framework@^1.0.0-beta.1.2.5"
+      "aurelia-framework": "npm:aurelia-framework@^1.0.8"
     },
     "devDependencies": {}
   }
