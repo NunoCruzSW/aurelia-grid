@@ -2,9 +2,10 @@
   "name": "aurelia-grid",
   "version": "0.0.2",
   "description": "An Aurelia Grid",
+  "registry": "github",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fouriedewet/aurelia-grid.git"
+    "url": "git+https://github.com/NunoCruzSW/aurelia-grid.git"
   },
   "keywords": [
     "aurelia"
@@ -15,9 +16,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fouriedewet/aurelia-grid/issues"
+    "url": "https://github.com/NunoCruzSW/aurelia-grid/issues"
   },
-  "homepage": "https://github.com/fouriedewet/aurelia-grid#readme",
+  "homepage": "https://github.com/NunoCruzSW/aurelia-grid/blob/master/README.md",
   "devDependencies": {
     "browser-sync": "^2.12.10",
     "del": "^2.2.0",
@@ -26,19 +27,19 @@
     "gulp-less": "^3.0.5",
     "gulp-plumber": "^1.0.1",
     "gulp-typescript": "^2.10.0",
-    "jspm": "0.16.15",
+    "jspm": "^0.17.0-beta.29",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.1.5",
-    "typescript": "^1.7.5",
+    "typescript": "2.1.6",
     "vinyl-paths": "^2.1.0"
   },
   "jspm": {
+    "main": "aurelia-grid.js",
     "directories": {
       "lib": "dist"
     },
     "dependencies": {
       "aurelia-framework": "npm:aurelia-framework@^1.0.8"
-    },
-    "devDependencies": {}
+    }
   }
 }
