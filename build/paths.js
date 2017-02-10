@@ -1,5 +1,5 @@
 var appRoot = 'src/';
-var outputRoot = 'dist/';
+var outputRoot = 'dist/native-modules';
 var exporSrvtRoot = 'export/'
 
 module.exports = {

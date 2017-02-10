@@ -1,6 +1,6 @@
 {
   "name": "aurelia-grid",
-  "version": "0.0.3",
+  "version": "1.0.2",
   "description": "An Aurelia Grid",
   "registry": "github",
   "repository": {
@@ -11,10 +11,8 @@
     "aurelia"
   ],
   "author": "Nuno Cruz <nmocruz@gmail.com>",
-  "main": "dist/index.js",
-  "directories": {
-   
-  },
+  "main": "dist/commonjs/index.js",
+  "directories": {},
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/NunoCruzSW/aurelia-grid/issues"
@@ -26,22 +24,26 @@
     "gulp": "^3.9.0",
     "gulp-changed": "^1.3.0",
     "gulp-less": "^3.0.5",
-    "gulp-plumber": "^1.0.1",
-    "gulp-typescript": "^2.10.0",
-    "jspm": "^0.17.0-beta.29",
-    "require-dir": "^0.3.0",
-    "run-sequence": "^1.1.5",
+    "gulp-plumber": "^1.1.0",
+    "gulp-typescript": "^3.1.4",
+    "jspm": "^0.16.52",
+    "require-dir": "^0.3.1",
+    "run-sequence": "^1.2.2",
     "typescript": "2.1.6",
     "vinyl-paths": "^2.1.0"
   },
   "jspm": {
-  
     "main": "aurelia-grid.js",
     "directories": {
       "lib": "dist"
     },
     "dependencies": {
       "aurelia-framework": "npm:aurelia-framework@^1.0.8"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
     }
   }
 }

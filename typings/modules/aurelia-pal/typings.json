@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/aurelia/pal/master/dist/aurelia-pal.d.ts",
+    "raw": "github:aurelia/pal/dist/aurelia-pal.d.ts",
+    "typings": "https://raw.githubusercontent.com/aurelia/pal/master/dist/aurelia-pal.d.ts"
+  }
+}

@@ -1,6 +1,15 @@
 {
   "name": "aurelia-grid",
   "dependencies": {
-   
+    "aurelia-framework": "github:aurelia/framework/dist/aurelia-framework.d.ts",
+    "aurelia-pal": "github:aurelia/pal/dist/aurelia-pal.d.ts",
+    "aurelia-binding": "github:aurelia/binding/dist/aurelia-binding.d.ts",
+    "aurelia-loader": "github:aurelia/loader/dist/aurelia-loader.d.ts",
+    "aurelia-logging": "github:aurelia/logging/dist/aurelia-logging.d.ts",
+    "aurelia-dependency-injection": "github:aurelia/dependency-injection/dist/aurelia-dependency-injection.d.ts",
+    "aurelia-metadata": "github:aurelia/metadata/dist/aurelia-metadata.d.ts",
+    "aurelia-task-queue": "github:aurelia/task-queue/dist/aurelia-task-queue.d.ts",
+    "aurelia-templating": "github:aurelia/templating/dist/aurelia-templating.d.ts",
+    "aurelia-path": "github:aurelia/path/dist/aurelia-path.d.ts"
   }
 }

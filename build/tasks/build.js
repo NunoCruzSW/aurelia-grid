@@ -14,7 +14,7 @@ gulp.task('build-system', function () {
 		.pipe(plumber())
     //.pipe(sourcemaps.init({loadMaps: true}))
 		.pipe(changed(paths.output, { extension: '.js' }))
-		.pipe(typescript(tsProject))
+		.pipe(tsProject())
     //.pipe(sourcemaps.write({includeContent: true}))
 		.pipe(gulp.dest(paths.output));
 });

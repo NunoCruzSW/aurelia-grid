@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/aurelia/metadata/master/dist/aurelia-metadata.d.ts",
+    "raw": "github:aurelia/metadata/dist/aurelia-metadata.d.ts",
+    "typings": "https://raw.githubusercontent.com/aurelia/metadata/master/dist/aurelia-metadata.d.ts"
+  }
+}
