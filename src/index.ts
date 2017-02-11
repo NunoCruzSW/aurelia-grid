@@ -1,3 +1,5 @@
+import { PLATFORM } from 'aurelia-pal';
 export function configure(aurelia){
-	aurelia.globalResources('./grid');
+	
+	aurelia.globalResources(PLATFORM.moduleName('./grid'));
 }

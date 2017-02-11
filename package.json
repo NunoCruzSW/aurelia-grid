@@ -11,7 +11,7 @@
     "aurelia"
   ],
   "author": "Nuno Cruz <nmocruz@gmail.com>",
-  "main": "dist/commonjs/index.js",
+  "main": "dist/native-modules/index.js",
   "directories": {},
   "license": "MIT",
   "bugs": {
